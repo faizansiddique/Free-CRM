@@ -4,6 +4,19 @@
   <listeners>
     <listener class-name="com.crm.qa.ExtentReportListener.ExtentReporterNG"/>
   </listeners>
+  <test thread-count="5" name="Free CRM Application Login Page(failed)">
+    <classes>
+      <class name="com.crm.qa.test.LoginPageTest">
+        <methods>
+          <include name="validateLogo_Links"/>
+          <include name="loginTest"/>
+          <include name="tearDown"/>
+          <include name="loginPageTitle"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.crm.qa.test.LoginPageTest -->
+    </classes>
+  </test> <!-- Free CRM Application Login Page(failed) -->
   <test thread-count="5" name="Free CRM Application Deals Page(failed)">
     <classes>
       <class name="com.crm.qa.test.DealsPageTest">
